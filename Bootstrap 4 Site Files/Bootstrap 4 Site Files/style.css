@@ -4,6 +4,7 @@ html, body{
   width: 100%;
   font-family: 'poppins', sans-serif;
   color: #222; 
+ 
 }
 .navbar{
   padding: 0.8rem;
@@ -18,11 +19,11 @@ html, body{
   width: 100%;
   height: 100%;
 }
-.carousel-caption{
+.carousel-caption {  /*Had issue with this code don't know why*/
   position: absolute;
   top: 50%;
-  transform: translateY(-50%);
-}
+ transform: translateY(-50%);
+} 
  .carousel-caption h1{
   font-size: 500%;
   text-transform: uppercase;
@@ -42,8 +43,37 @@ html, body{
   background-color: #563d7c;
   border: 1px solid #563d7c;
 }
-
-
+.jumbotron{
+  padding: 1rem;
+  border-radius: 0;
+}
+.padding{
+  padding-bottom: 2rem;
+}
+.welcome{
+  width: 75%;
+  margin: 0 auto;
+  padding-top: 2rem;
+}
+.welcome hr{
+  border-top: 2px solid #b4b4b4;
+  width: 95%;
+  margin-top: 0.3rem;
+  margin-bottom: 1rem;
+}
+.fa-code{
+  color: #e54d26;
+}
+.fa-bold{
+  color: #563d76;
+}
+.fa-css3{
+  color: #2163af;
+}
+.fa-code, .fa-bold, .fa-css3{
+  margin: 1rem;
+  font-size: 4rem;
+}
 
 
 
@@ -77,19 +107,16 @@ figure {
 }
 .fixed-wrap {
   clip: rect(0, auto, auto, 0);
-  position: absolute;
-  top: 0;
-  left: 0;
+  position: fixed;
+  display: block;
   width: 100%;
   height: 100%;
-}
+ }
 #fixed {
   background-image: url('img/mac.png');
   position: fixed;
   display: block;
-  top: 0;
-  left: 0;
-  width: 100%;
+   width: 100%;
   height: 100%;
   background-size: cover;
   background-position: center center;
